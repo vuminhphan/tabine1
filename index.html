@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestBuy</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+        }
+
+        header a:hover {
+            color: #ffc107;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .product-details {
+            margin-top: 10px;
+        }
+
+        .product-details h2 {
+            margin-top: 0;
+        }
+
+        .product-details p {
+            margin-top: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        form label {
+            margin-bottom: 5px;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="tel"],
+        form input[type="submit"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        form input[type="submit"] {
+            background-color: #ffc107;
+            color: white;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #ffa500;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#">Home</a>
+        <h1>BestBuy</h1>
+        <nav>
+            <a href="#">Electronics</a>
+            <a href="#">Computers</a>
+            <a href="#">Appliances</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="product-card">
+            <img class="product-image" src="https://via.placeholder.com/300" alt="Product Image">
+            <div class="product-details">
+                <h2>Product Title</h2>
+                <p>Description of the product goes here...</p>
+                <p>Price: $99.99</p>
+                <p>Availability: In Stock</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img class="product-image" src="https://via.placeholder.com/300" alt="Product Image">
+            <div class="product-details">
+                <h2>Product Title</h2>
+                <p>Description of the product goes here...</p>
+                <p>Price: $199.99</p>
+                <p>Availability: In Stock</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img class="product-image" src="https://via.placeholder.com/300" alt="Product Image">
+            <div class="product-details">
+                <h2>Product Title</h2>
+                <p>Description of the product goes here...</p>
+                <p>Price: $299.99</p>
+                <p>Availability: In Stock</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 BestBuy. All rights reserved.</p>
+    </footer>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
